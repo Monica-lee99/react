@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-20 16:05:35
- * @LastEditTime: 2020-12-23 20:04:35
+ * @LastEditTime: 2020-12-28 21:56:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react\src\index.js
@@ -15,7 +15,9 @@ import Website from './WebSite';
 import reportWebVitals from './reportWebVitals';
 import LoginControl from './LoginControl';
 import UserGist from './UserGust'
-
+import PostList from './PostList'
+import LoginForm from './form'
+import UserListContainer from './UserList'
 ReactDOM.render(
   <React.StrictMode>
     <App/>
@@ -23,6 +25,9 @@ ReactDOM.render(
     <LoginControl/>
     <Website/>
     <UserGist source="https://api.github.com/users/octocat/gists" />,
+    <PostList/>
+    <LoginForm/>
+    <UserListContainer/>
   </React.StrictMode>,
   
   document.getElementById('root')
