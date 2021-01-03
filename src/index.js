@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-20 16:05:35
- * @LastEditTime: 2020-12-28 21:56:39
+ * @LastEditTime: 2021-01-03 14:31:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react\src\index.js
@@ -17,17 +17,27 @@ import LoginControl from './LoginControl';
 import UserGist from './UserGust'
 import PostList from './PostList'
 import LoginForm from './form'
-import UserListContainer from './UserList'
+import UserListContainer from './UserContainer'
+import MyWithpersistentData from './highterOrder';
+// import { Router, Route, hashHistory, Switch } from 'react-router';
 ReactDOM.render(
   <React.StrictMode>
     <App/>
-    <HelloMessage name="李国豪"/>
+    {/* <HelloMessage name="李国豪"/>
     <LoginControl/>
     <Website/>
     <UserGist source="https://api.github.com/users/octocat/gists" />,
     <PostList/>
     <LoginForm/>
     <UserListContainer/>
+    <MyWithpersistentData/> */}
+    {/* <Router>
+      <Switch>
+        <Route path="/" component={App}/>
+        <Route path="/repos" component={MyWithpersistentData}/>
+        <Route path="/about" component={UserListContainer}/>
+      </Switch>
+    </Router> */}
   </React.StrictMode>,
   
   document.getElementById('root')

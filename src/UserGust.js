@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-23 20:03:40
- * @LastEditTime: 2020-12-23 20:53:29
+ * @LastEditTime: 2021-01-02 18:28:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \react\src\UserGust.js
@@ -40,7 +40,6 @@ class UserGist extends React.Component {
       this.state = {username: '', lastGistUrl: ''};
   }
   componentDidMount() {
-    // var that = this
     let promise = axios.get(this.props.source);
     promise.then((result) =>
         {
